@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     graphicsmagick \
     unzip \
     && rm -rf /var/lib/apt/lists/*
-WORKDIR /nodejsAction
+WORKDIR /workspace/nodejsAction
 # COPY source code "*.js" from nodejsActionBase to current working dir
 RUN mkdir /src /platform
 COPY ./core/nodejsActionBase/*.js ./
